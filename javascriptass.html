@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combo Box Example</title>
+	<script>
+		function updateDiv() {
+			var selectBox = document.getElementById("myList");
+			var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+			document.getElementById("myDiv").innerHTML = selectedValue;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<select id="myList" onchange="updateDiv()">
+			<option value="Option 1">Opțiunea 1</option>
+			<option value="Option 2">Opțiunea 2</option>
+			<option value="Option 3">Opțiunea 3</option>
+		</select>
+	</form>
+	<div id="myDiv"></div>
+</body>
+</html>
